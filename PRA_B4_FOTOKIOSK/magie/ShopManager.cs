@@ -26,6 +26,10 @@ namespace PRA_B4_FOTOKIOSK.magie
         {
             Instance.lbPrices.Content = Instance.lbPrices.Content + text;
         }
+        public static string GetShopPriceList()
+        {
+            return (string)Instance.lbReceipt.Content;
+        }
 
         public static void SetShopReceipt(string text)
         {
@@ -83,5 +87,7 @@ namespace PRA_B4_FOTOKIOSK.magie
             }
             return id;
         }
+
+        
     }
 }
